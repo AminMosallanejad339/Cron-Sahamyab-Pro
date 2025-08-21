@@ -546,10 +546,16 @@ dos2unix logs/*.log
 3. Remove old `$'\r'` characters from filenames if necessary.
 4. After this, cron jobs for Step 1, 2, 3 should work properly.
 
+
+------
+
+## ETL Pipeline Flowchart (Mermaid)
+
+```mermaid
 ---
 config:
-  layout: dagre
-  theme: neo
+  layout: elk
+  theme: forest
 ---
 flowchart LR
     A["🌐 API"] --> B["📝 Fetch Tweets"]
@@ -565,6 +571,7 @@ flowchart LR
 
 ```
 
+------
 
 
 
