@@ -34,7 +34,7 @@ https://www.m-fozouni.ir/
 
 ## Directory Structure
 
-![ETL Pipeline Screenshot](E:/Proj/Cron-Sahamyab-Pro/stage/2025-08-21-201511.png)
+![ETL Pipeline Screenshot](2025-08-21-201511.png)
 
 ------
 
@@ -546,11 +546,7 @@ dos2unix logs/*.log
 3. Remove old `$'\r'` characters from filenames if necessary.
 4. After this, cron jobs for Step 1, 2, 3 should work properly.
 
-![2025-08-21-211322](E:/Proj/Cron-Sahamyab-Pro/stage/2025-08-21-211322.png)
+![2025-08-21-211322](2025-08-21-211322.png)
 
-# Sahamyab_Cron_Pro
 
-# Sahamyab_Cron_Pro
-
-# Cron-Sahamyab-Pro
 
