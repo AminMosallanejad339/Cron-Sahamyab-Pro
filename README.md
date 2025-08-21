@@ -546,7 +546,26 @@ dos2unix logs/*.log
 3. Remove old `$'\r'` characters from filenames if necessary.
 4. After this, cron jobs for Step 1, 2, 3 should work properly.
 
-![2025-08-21-211322](2025-08-21-211322.png)
+---
+config:
+  layout: dagre
+  theme: neo
+---
+flowchart LR
+    A["🌐 API"] --> B["📝 Fetch Tweets"]
+    B --> C["📂 Combine CSVs"]
+    C --> D["🛠 Convert to Parquet"]
+    D --> E["🏞 Store in Data Lake"]
+    E --> F["🧹 Data Cleaning"]
+    F --> G["📊 Feature Engineering"]
+    G --> H["🌐 NLP & Translation"]
+    H --> I["💾 Data Warehouse"]
+    I --> J["📈 Analysis & Visualization"]
+    J --> K["📊 Dashboard"]
+
+```
+
+
 
 
 
